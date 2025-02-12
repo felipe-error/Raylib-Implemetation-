@@ -12,7 +12,6 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 
 # Dependencies
 set(RAYLIB_VERSION 5.5)
-set(JSON_VERSION 3.2.0)
 find_package(raylib ${RAYLIB_VERSION} QUIET) # QUIET or REQUIRED
 if (NOT raylib_FOUND) # If there's none, fetch and build raylib
   FetchContent_Declare(
